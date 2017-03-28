@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ClickMeComponent } from './click-me.component';
+import { LoopbackComponent } from './loop-back.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClickMeComponent,
+    LoopbackComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +19,10 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    ClickMeComponent,
+    LoopbackComponent
+  ]
 })
 export class AppModule { }
