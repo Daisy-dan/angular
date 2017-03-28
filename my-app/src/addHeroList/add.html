@@ -1,0 +1,8 @@
+<p>Little Tour Of Heroes</p>
+<input #new (keyup)=addList(new.value)>
+<button (click)="addTag()">Add</button>
+<p>{{new.value}}</p>
+<ul class="lists">
+  <li *ngFor="let hero of heroes">{{hero}}</li>
+
+</ul>

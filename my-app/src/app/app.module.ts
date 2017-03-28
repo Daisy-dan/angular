@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ClickMeComponent } from './click-me.component';
 import { LoopbackComponent } from './loop-back.component';
+import { keyupEnterComponent } from './keyupEnter.components';
+import { AddHeroList } from '../addHeroList/add';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickMeComponent,
-    LoopbackComponent
+    LoopbackComponent,
+    keyupEnterComponent,
+    AddHeroList
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,9 @@ import { LoopbackComponent } from './loop-back.component';
   bootstrap: [
     AppComponent,
     ClickMeComponent,
-    LoopbackComponent
+    LoopbackComponent,
+    keyupEnterComponent,
+    AddHeroList
   ]
 })
 export class AppModule { }
