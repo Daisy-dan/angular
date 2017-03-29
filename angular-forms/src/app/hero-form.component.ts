@@ -5,7 +5,8 @@ import { Hero }    from './hero';
 @Component({
   moduleId: module.id,
   selector: 'hero-form',
-  templateUrl: './hero-form.component.html'
+  templateUrl: './hero-form.component.html',
+  styleUrls:['./form.css']
 })
 export class HeroFormComponent {
 
@@ -20,4 +21,8 @@ export class HeroFormComponent {
 
   // TODO: Remove this when we're done
   get diagnostic() { return JSON.stringify(this.model); }
+
+  newHero(){
+    this.model = new Hero(42,'','');
+  }
 }
