@@ -8,14 +8,18 @@ import { ClickMeComponent } from './click-me.component';
 import { LoopbackComponent } from './loop-back.component';
 import { keyupEnterComponent } from './keyupEnter.components';
 import { AddHeroList } from '../addHeroList/add';
+import { Ng2Echarts } from 'ng2-echarts';
+import { EchartsComponent } from './echarts.component';
 
 @NgModule({
   declarations: [
+    Ng2Echarts,
     AppComponent,
     ClickMeComponent,
     LoopbackComponent,
     keyupEnterComponent,
-    AddHeroList
+    AddHeroList,
+    EchartsComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,8 @@ import { AddHeroList } from '../addHeroList/add';
     ClickMeComponent,
     LoopbackComponent,
     keyupEnterComponent,
-    AddHeroList
+    AddHeroList,
+    EchartsComponent
   ]
 })
 export class AppModule { }
